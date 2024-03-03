@@ -3,7 +3,7 @@ const express = require("express");
 const app = express();
 //create simple service like Rs to Doller
 app
-  .get("/:rs", (req, res) => {
+  .get("/rs=:rs", (req, res) => {
     let rs = Number(req.params.rs);
 
     const conversion_rate = 0.012;
